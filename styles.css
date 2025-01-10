@@ -1,23 +1,22 @@
 body {
-    display: block;
     background-color: green;
-    margin: 30px;
     justify-content: center;
+    display: block;
 }
 
-/*
 h1 {
-
+    text-align: center;
 
 }
-*/
 
 form {
+    justify-self: center;
+    width: fit-content;
     background-color: white;
-    display: flex;
-    flex-direction: column;
     padding: 10px;
+    box-shadow: 0 3px 10px black;
 }
-label {
-    margin-top: 3px;
+
+fieldset {
+    border: none;
 }
