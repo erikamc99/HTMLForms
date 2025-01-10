@@ -1,0 +1,23 @@
+body {
+    display: block;
+    background-color: green;
+    margin: 30px;
+    justify-content: center;
+}
+
+/*
+h1 {
+
+
+}
+*/
+
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+label {
+    margin-top: 3px;
+}

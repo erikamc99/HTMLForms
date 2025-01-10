@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GeeksforGeeks Survey Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>GeeksforGeeks Survey Form</h1>
+        <form action="script.js">
+            <label for="uname">Name</label>
+            <input type="text" id="uname" name="uname" value="Enter your name" required>
+            <label for="uemail">Email</label>
+            <input type="email" id="uemail" name="uemail" value="Enter your email" required>
+            <label for="uage">Age</label>
+            <input type="number" id="uage" name="uage" placeholder="Enter your age" min="18">
+            <label for="description">Which best option describes you?</label>
+            <select name="description" id="description" required>
+                <option value="Student">Student</option>
+                <option value="Worker">Worker</option>
+                <option value="None">None</option>
+            </select>
+            <label for="recommend">Would you recommend this site?</label>
+            <input type="radio" id="recommend" name="recommend" value="Yes">
+                <label for="recommend">Yes</label>
+            <input type="radio" id="recommend" name="recommend" value="No">
+                <label for="recommend">No</label>
+            <input type="radio" id="recommend" name="recommend" value="Maybe">
+                <label for="recommend">Maybe</label>
+            <label for="langframe">Language and Frameworks known <small>(Check all that apply)</small></label>
+            <input type="checkbox" id="langframe" name="langframe" value="C">
+            <label for="langframe">C</label>
+            <input type="checkbox" id="langframe" name="langframe" value="C++">
+            <label for="langframe">C++</label>
+            <input type="checkbox" id="langframe" name="langframe" value="C#">
+            <label for="langframe">C#</label>
+            <input type="checkbox" id="langframe" name="langframe" value="Java">
+            <label for="langframe">Java</label>
+            <input type="checkbox" id="langframe" name="langframe" value="Python">
+            <label for="langframe">Python</label>
+            <input type="checkbox" id="langframe" name="langframe" value="JavaScript">
+            <label for="langframe">JavaScript</label>
+            <input type="checkbox" id="langframe" name="langframe" value="React">
+            <label for="langframe">React</label>
+            <input type="checkbox" id="langframe" name="langframe" value="Angular">
+            <label for="langframe">Angular</label>
+            <input type="checkbox" id="langframe" name="langframe" value="Django">
+            <label for="langframe">Django</label>
+            <input type="checkbox" id="langframe" name="langframe" value="Spring">
+            <label for="langframe">Spring</label>
+            <label for="comments">Any comments or suggestions</label>
+            <textarea name="comments" id="comments"></textarea>
+            <button>Submit</button>
+        </form>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
