@@ -12,10 +12,10 @@ h1 {
 
 form {
     width: fit-content;
-    background-color: white;
-    font-size: 15px;
     margin: 50px auto;
     padding: 30px 20px;
+    background-color: white;
+    font-size: 15px;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -29,12 +29,12 @@ div label {
 }
 
 div input, div select, div textarea {
+    display: block;
+    padding: 10px;
+    width: 95%;
     border: 1px solid #777;
     border-radius: 2px;
     font-family: inherit;
-    padding: 10px;
-    display: block;
-    width: 95%;
 }
 
 div input[type="radio"],
@@ -49,22 +49,27 @@ div input[type="checkbox"] {
 button {
     display: block;
     width: 100%;
+    margin: 50px 0 20px;
     background-color: #01c066;
     border: 1px solid #777;
     border-radius: 2px;
     font-size: 20px;
-    margin: 50px 0 20px;
     cursor: pointer;
 }
 
 .form-submitted {
+    width: 50vh;
+    height: 20vh;
     background-color: rgba(255, 255, 255, 0.932);
     font-size: 16px;
     font-weight: bold;
     justify-self: center;
     align-content: center;
     text-align: center;
-    width: 50vh;
-    height: 20vh;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#uage::-webkit-inner-spin-button,
+#uage::-webkit-outer-spin-button {
+    -webkit-appearance: none;
 }
