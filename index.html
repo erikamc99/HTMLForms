@@ -4,13 +4,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>GeeksforGeeks Survey Form</title>
-        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1>GeeksforGeeks Survey Form</h1>
-        <form action="script.js">
+        <form>
             <div>
                 <label for="uname">Name</label>
                 <input type="text" id="uname" name="uname" placeholder="Enter your name" required>
@@ -23,7 +22,7 @@
 
             <div>
                 <label for="uage">Age</label>
-                <input type="number" id="uage" name="uage" placeholder="Enter your age" min="18">
+                <input type="number" id="uage" name="uage" placeholder="Enter your age" min="18" max="110" required>
             </div>
 
             <div>
@@ -36,7 +35,7 @@
             </div>
 
             <div>
-                <label for="recommend">Would you recommend this site?</label>
+                <label>Would you recommend this site?</label>
                 <label for="recommend-yes">
                     <input type="radio" id="recommend-yes" name="recommend" value="Yes">Yes
                 </label>
@@ -49,7 +48,7 @@
             </div>
 
             <div>
-                <label for="langframe">Language and Frameworks known <small>(Check all that apply)</small></label>
+                <label>Language and Frameworks known <small>(Check all that apply)</small></label>
                 <label for="langframe-c">
                     <input type="checkbox" id="langframe-c" name="langframe" value="C">C
                 </label>
@@ -87,8 +86,8 @@
                 <textarea name="comments" id="comments" placeholder="(Optional)"></textarea>
             </div>
             
-            <button>Submit</button>
+            <button id="submit" type="submit">Submit</button>
         </form>
-        <script src="script.js" async defer></script>
+        <script src="script.js"></script>
     </body>
 </html>
