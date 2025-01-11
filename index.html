@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>GeeksforGeeks Survey Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>GeeksforGeeks Survey Form</h1>
+        <form action="script.js">
+            <div>
+                <label for="uname">Name</label>
+                <input type="text" id="uname" name="uname" placeholder="Enter your name" required>
+            </div>               
+
+            <div>
+                <label for="uemail">Email</label>
+                <input type="email" id="uemail" name="uemail" placeholder="Enter your email" required>
+            </div>
+
+            <div>
+                <label for="uage">Age</label>
+                <input type="number" id="uage" name="uage" placeholder="Enter your age" min="18">
+            </div>
+
+            <div>
+                <label for="description">Which best option describes you?</label>
+                <select name="description" id="description" required>
+                    <option value="Student">Student</option>
+                    <option value="Worker">Worker</option>
+                    <option value="None">None</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="recommend">Would you recommend this site?</label>
+                <label for="recommend-yes">
+                    <input type="radio" id="recommend-yes" name="recommend" value="Yes">Yes
+                </label>
+                <label for="recommend-no">
+                    <input type="radio" id="recommend-no" name="recommend" value="No">No
+                </label>
+                <label for="recommend-maybe">
+                    <input type="radio" id="recommend-maybe" name="recommend" value="Maybe">Maybe
+                </label>
+            </div>
+
+            <div>
+                <label for="langframe">Language and Frameworks known <small>(Check all that apply)</small></label>
+                <label for="langframe-c">
+                    <input type="checkbox" id="langframe-c" name="langframe" value="C">C
+                </label>
+                <label for="langframe-cpp">
+                <input type="checkbox" id="langframe-cpp" name="langframe" value="C++">C++
+                </label>
+                <label for="langframe-csharp">
+                    <input type="checkbox" id="langframe-csharp" name="langframe" value="C#">C#
+                </label>
+                <label for="langframe-java">
+                    <input type="checkbox" id="langframe-java" name="langframe" value="Java">Java
+                </label>
+                <label for="langframe-python">
+                    <input type="checkbox" id="langframe-python" name="langframe" value="Python">Python
+                </label>
+                <label for="langframe-js">
+                    <input type="checkbox" id="langframe-js" name="langframe" value="JavaScript">JavaScript
+                </label>
+                <label for="langframe-react">
+                    <input type="checkbox" id="langframe-react" name="langframe" value="React">React
+                </label>
+                <label for="langframe-angular">
+                    <input type="checkbox" id="langframe-angular" name="langframe" value="Angular">Angular
+                </label>
+                <label for="langframe-django">
+                    <input type="checkbox" id="langframe-django" name="langframe" value="Django">Django
+                </label>
+                <label for="langframe-spring">
+                    <input type="checkbox" id="langframe-spring" name="langframe" value="Spring">Spring
+                </label>
+            </div>
+            
+            <div>
+                <label for="comments">Any comments or suggestions</label>
+                <textarea name="comments" id="comments" placeholder="(Optional)"></textarea>
+            </div>
+            
+            <button>Submit</button>
+        </form>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
