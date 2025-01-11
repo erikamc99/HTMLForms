@@ -1,22 +1,58 @@
 body {
-    background-color: green;
-    justify-content: center;
-    display: block;
+    background-color: #01c066;
+    background-image: radial-gradient(circle, grey 0.5px, #01c066 1px);
+    background-size: 7px 7px;
+    font-family: Verdana, sans-serif;
 }
 
 h1 {
+    margin: 20px 0;
     text-align: center;
-
 }
 
 form {
-    justify-self: center;
     width: fit-content;
     background-color: white;
-    padding: 10px;
-    box-shadow: 0 3px 10px black;
+    font-size: 15px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-fieldset {
-    border: none;
+div {
+    margin-bottom: 25px;
+}
+
+div label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+div input, div select, div textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+div input[type="radio"],
+div input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin: 7px 3px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    width: 100%;
+    background-color: #01c066;
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-size: 20px;
+    margin: 50px 0 20px;
+    cursor: pointer;
 }
